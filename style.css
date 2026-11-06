@@ -1,0 +1,14 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, Helvetica, sans-serif; background: #f4f7ff; color: #26304b; }
+.container { max-width: 940px; margin: 0 auto; padding: 42px 20px; }
+header { text-align: center; margin-bottom: 30px; }
+h1 { color: #4939a4; font-size: clamp(1.8rem, 5vw, 2.6rem); margin: 0 0 12px; }
+header p { color: #59647c; font-size: 1.05rem; line-height: 1.5; }
+.project-links { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+.project { background: white; border: 1px solid #dfe4f6; border-radius: 10px; }
+.project a { display: flex; align-items: center; justify-content: space-between; gap: 8px; padding: 17px 18px; color: #3341a1; font-weight: 700; text-decoration: none; min-height: 58px; border-radius: 10px; }
+.project a:hover, .project a:focus-visible { background: #e6e8ff; color: #241978; outline: 2px solid #7465db; outline-offset: 1px; }
+.project span { font-size: 1.2rem; }
+footer { text-align: center; margin-top: 34px; color: #65708c; font-size: .9rem; }
+@media (max-width: 700px) { .project-links { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 430px) { .project-links { grid-template-columns: 1fr; } .container { padding-top: 30px; } }
